@@ -1,0 +1,135 @@
+@font-face {
+    font-family: customFont;
+    src: url(PlusJakartaSans-VariableFont_wght.ttf);
+  }
+
+  * {
+      font-family: customFont;
+      background-color: #0A0B0D;
+      color: rgb(255, 255, 255);
+  }
+
+  body{
+    text-align: center;
+  }
+
+  .container{
+      width: 800px;
+      height: auto;
+      margin: auto;
+
+  }
+
+  .upperHeader{
+    font-size: 3rem;
+  }
+
+
+  .cryptoImg{
+      height: 50px;
+      width: 50px;
+      float: left;
+  }
+
+  .tableLeft{
+    margin: 100px;
+  }
+  tr{
+    margin: 10px;
+  }
+  td{
+    border-radius: 25px;
+    border: 10px solid #0A0B0D;
+    background-color: #141519;
+    width: 270px;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    
+
+  }
+  .tableCrypto{
+      align-items: center;
+      margin: auto;
+  }
+  .leftCryptoValue{  
+   
+    padding: 20px;    
+    background-color: #141519;
+  }
+
+  .rightCryptoValue{
+    padding: 20px;
+    background-color: #141519;
+  }
+
+  .innerText{
+    float: left;
+    background-color: #141519;
+    margin-left: 20px;
+  }
+
+  .cryptoName{
+    text-align: left;
+    font-size: large;
+    background-color: #141519;
+    color: #8a8a8a;
+  }
+
+  .cryptoValue{
+    text-align: right;
+    background-color: #141519;
+  }
+
+
+  .lowerHeader{
+    background-color: #141519;
+  }
+
+  .cryptoNews{
+    background-color: #141519;
+  }
+
+  .newsParagraph{
+    background-color: #141519;
+    color: #8a8a8a;
+  }
+
+  .newsH{
+    background-color: #141519;
+    color: white;
+  }
+
+  .botun {
+    margin: 3rem;
+    display: inline-block;
+    padding: 0.9rem 1.8rem;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(27, 23, 255);
+    border: 3px solid rgb(255, 255, 255);
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    font-family: inherit;
+   }
+   
+   .botun::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    transform: translateX(-100%);
+    transition: all .3s;
+    z-index: -1;
+   }
+   
+   .botun:hover::before {
+    transform: translateX(0);
+   }
